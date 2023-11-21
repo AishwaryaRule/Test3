@@ -6,7 +6,7 @@ steps:
         "build",
         "-t",
         "asia-south1-docker.pkg.dev/$_PROJECT_ID/cloud-run-source-deploy/test3:$COMMIT_SHA",
-        "./gradio_app/test3/",
+        ".",
       ]
     # push the container image
   - name: "gcr.io/cloud-builders/docker"
